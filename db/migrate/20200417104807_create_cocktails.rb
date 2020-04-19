@@ -4,6 +4,7 @@ class CreateCocktails < ActiveRecord::Migration[6.0]
       t.string :name
       t.string :ingredient
       t.integer :dose
+      t.string :picture_url
 
       t.timestamps
     end

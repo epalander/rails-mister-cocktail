@@ -1,10 +1,25 @@
-<h1> Our Cocktail List </h1>
+<!-- <div class="banner">
+  <h1> Our Cocktail List </h1>
+  <p><span id="banner-typed-text"></span></p>
+</div> -->
 
-  <h2>Name</h2>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1509807995916-c332365e2d9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1271&q=80);">
+  <div class="container">
+    <h1>Our Cocktail List</h1>
+     <p><span id="banner-typed-text">Drinks from around the world.</span></p>
+    <!-- <a class="btn btn-flat" href="#">Apply now</a> -->
+  </div>
+</div>
 
+<div class="container">
+  <div class="cards">
   <% @cocktails.each do |cocktail| %>
-     <p><%= cocktail.name %></p>
+    <div class="card-category mt-4" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cocktail.picture_url %>)">
+      <div class="d-flex justify-content-between m-2">
+        <!--  <p><%= cocktail.name %></p> -->
+        <%= link_to cocktail.name, cocktail_path(cocktail.id) %>
+      </div>
+    </div>
   <% end %>
-
-
-
+  </div>
+</div>

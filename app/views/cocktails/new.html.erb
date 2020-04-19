@@ -1,4 +1,15 @@
-<%= simple_form_for [@cocktail] do |f| %>
+<div class="container">
+  <div class="row">
+    <div class="mt-4 col-sm-12 col-lg-6">
+      <h1>Add a New Cocktail</h1>
+      <%= render 'form', cocktail: @cocktail %>
+      <hr>
+    </div>
+  </div>
+  <%= link_to 'Back', cocktails_path, class: "btn btn-primary" %>
+</div>
+
+<!--
   <div class="form-inputs container">
     <%= f.input :name %>
     <%= f.input :ingredient %>
@@ -9,3 +20,4 @@
     <%= f.submit "create your cocktail" %>
   </div>
 <% end %>
+ -->

@@ -1,1 +1,9 @@
-<p><%= cocktail.name %><p>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= @cocktail.picture_url %>);">
+  <div class="container">
+    <h1><%= @cocktail.name %></h1>
+  </div>
+</div>
+
+<div class="container">
+  <%= link_to 'Back', cocktails_path, class: "btn btn-primary mt-4" %>
+</div>
