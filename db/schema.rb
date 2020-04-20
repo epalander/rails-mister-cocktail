@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2020_04_17_112442) do
     t.string "name"
     t.string "ingredient"
     t.integer "dose"
-    t.string "picture_url"
+    t.string "picture"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
