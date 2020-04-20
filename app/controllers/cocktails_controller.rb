@@ -26,6 +26,6 @@ private
 
 # Only allow a trusted parameter "white list" through.
   def cocktail_params
-    params.require(:cocktail).permit(:name, :picture_url)
+    params.require(:cocktail).permit(:name, :picture)
   end
 end
