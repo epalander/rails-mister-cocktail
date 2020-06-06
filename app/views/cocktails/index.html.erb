@@ -5,8 +5,8 @@
 
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1509807995916-c332365e2d9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1271&q=80);">
   <div class="container">
-    <h1>Our Cocktail List</h1>
-     <p><span id="banner-typed-text">Drinks from around the world.</span></p>
+    <h1>It's Cocktail O'Clock</h1>
+     <p><span id="banner-typed-text">Best Drings from around the world</span></p>
     <!-- <a class="btn btn-flat" href="#">Apply now</a> -->
   </div>
 </div>
@@ -14,9 +14,9 @@
 <div class="container">
   <div class="cards">
   <% @cocktails.each do |cocktail| %>
-    <div class="card-category mt-4" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cocktail.picture %>)">
+    <div class="card-category mt-4" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url( <%= cocktail.picture %>)">
       <div class="d-flex justify-content-between m-2">
-        <!--  <p><%= cocktail.name %></p> -->
+
         <%= link_to cocktail.name, cocktail_path(cocktail.id) %>
       </div>
     </div>
@@ -25,5 +25,5 @@
 </div>
 
 <div class="container mt-4">
-  <%= link_to 'Create a new cocktail', cocktails_path, class: "btn btn-primary" %>
+  <%= link_to 'Create a new cocktail', new_cocktail_path, class: "btn btn-primary" %>
 </div>
