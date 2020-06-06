@@ -1,7 +1,7 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= @cocktail.picture %>);">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= cl_image_tag @cocktail.picture.key, :height=>200, width: 400, :crop=>"fill"  %>)">
   <div class="container">
-    <h1><%= @cocktail.name %></h1>
-    <%= cl_image_tag @cocktail.picture.key, :height=>300, :crop=>"fill" %>
+    <h2><%= @cocktail.name %></h2>
+    <!-- <div style="text-align: center;"><%= cl_image_tag @cocktail.picture.key, :height=>300, width: 400, :crop=>"fill" %></div> -->
 
   </div>
 </div>

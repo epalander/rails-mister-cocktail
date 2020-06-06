@@ -1,0 +1,13 @@
+.btn-ghost {
+  border-radius: 50px;
+  border: 2px solid #886428;
+  background-color: #886428;
+  transition: opacity 0.3s ease;
+  margin-top: 20px;
+}
+
+.btn-ghost:hover, .btn:active {
+  background-color: #886428;
+  color: $white;
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}

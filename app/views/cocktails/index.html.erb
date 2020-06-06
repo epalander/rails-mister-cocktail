@@ -5,9 +5,11 @@
 
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1509807995916-c332365e2d9e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1271&q=80);">
   <div class="container">
-    <h1>It's Cocktail O'Clock</h1>
-     <p><span id="banner-typed-text">Best Drings from around the world</span></p>
-    <!-- <a class="btn btn-flat" href="#">Apply now</a> -->
+    <h1>It's Gin O'Clock...</h1>
+    <span id="banner-typed-text">Best Gin Cocktails from around the world</span>
+    <br>
+    <!-- <a class="btn btn-flat" href="#">Add a new cocktail</a> -->
+    <%= link_to 'Create a new cocktail', new_cocktail_path, class: "btn btn-ghost" %>
   </div>
 </div>
 
@@ -24,6 +26,3 @@
   </div>
 </div>
 
-<div class="container mt-4">
-  <%= link_to 'Create a new cocktail', new_cocktail_path, class: "btn btn-primary" %>
-</div>
